@@ -1,0 +1,55 @@
+body{
+	background:rgba(218,218,218,0.3);
+}
+header{
+	min-height: 200px;
+	background: url(../images/logo.jpg) center center fixed no-repeat;
+	background-size: 100% 100%;
+}
+
+header h1{
+	color:#FFF;
+}
+.textura{
+	background:rgba(180,180,180,0.4);
+	color:#FFF;
+}
+header .textura small{
+	color: #CCC;
+}
+.navbar-main{
+	margin-bottom:5px;
+	background: rgba(255,255,255,0.9);
+	color: 0d3bf0;
+}
+.navbar-main a{
+	color: #0d3bf0;
+	font-weight:bold;
+}
+nav li p{
+	padding:10px;
+	color: #337ab7;
+}
+
+.margin200{
+	margin-top:200px;
+	margin-bottom:200px;
+}
+
+.green{
+	background: rgba(91,178,9,0.7);
+	padding: 45px;
+	border-radius: 20px;
+}
+
+footer h3{
+	color:#000;
+}
+
+footer .textura small{
+	color: #555;
+}
+
+.icon-success {
+    color: #5CB85C;
+}
