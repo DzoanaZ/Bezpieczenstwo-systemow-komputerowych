@@ -1,6 +1,9 @@
 <?php
 require "db_connect.php";
+error_reporting(0)
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +22,9 @@ require "db_connect.php";
 <body>
 
 <div class="container">
+<br>
+    <h1>Logowanie niebezpieczne</h1>
+    <br>
 
     <?php
     if ($_GET['attempt'] != 1) {
