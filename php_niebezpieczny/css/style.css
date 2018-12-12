@@ -1,55 +1,88 @@
-body{
-	background:rgba(218,218,218,0.3);
-}
-header{
-	min-height: 200px;
-	background: url(../images/logo.jpg) center center fixed no-repeat;
-	background-size: 100% 100%;
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-header h1{
-	color:#FFF;
-}
-.textura{
-	background:rgba(180,180,180,0.4);
-	color:#FFF;
-}
-header .textura small{
-	color: #CCC;
-}
-.navbar-main{
-	margin-bottom:5px;
-	background: rgba(255,255,255,0.9);
-	color: 0d3bf0;
-}
-.navbar-main a{
-	color: #0d3bf0;
-	font-weight:bold;
-}
-nav li p{
-	padding:10px;
-	color: #337ab7;
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.margin200{
-	margin-top:200px;
-	margin-bottom:200px;
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
 }
 
-.green{
-	background: rgba(91,178,9,0.7);
-	padding: 45px;
-	border-radius: 20px;
+.header a{
+  text-decoration: none;
 }
 
-footer h3{
-	color:#000;
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
 }
 
-footer .textura small{
-	color: #555;
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
 }
 
-.icon-success {
-    color: #5CB85C;
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.nonclickable {
+  pointer-events: none;
+  cursor: not-allowed;
 }
