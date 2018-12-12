@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- table `users` content
 DELETE FROM `users`;
 INSERT INTO `users` (`id`, `username`, `password`) VALUES 
-(1, 'admin', 'pwd1'),
+(1, 'admin', 'admin'),
 (2, 'danilo', 'gasd12'),
 (3, 'filippo', 'postuy666'),
 (4, 'oreste', 'tmrchio82'),
