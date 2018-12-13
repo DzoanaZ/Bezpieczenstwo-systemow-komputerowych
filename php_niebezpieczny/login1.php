@@ -2,8 +2,6 @@
 require "db_connect.php";
 error_reporting(0)
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +9,15 @@ error_reporting(0)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="SQL Injection demo">
-    <meta name="author" content="Francesco Borzì">
-
+    <meta name="author" content="Bobry">
     <title>SQL Injection Demo</title>
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
 <div class="container">
-<br>
+    <br>
     <h1>Logowanie niebezpieczne</h1>
     <br>
 
@@ -69,16 +64,15 @@ error_reporting(0)
 
         if ($result->num_rows > 0) {
             echo "<p class=\"text-center\">Zalogowany jako: <strong>" . $username . "</strong></p>";
-
         } else {
-            echo "<p class=\"text-center\">Zła nazwa użytkownika/hasło</p>";
+            echo "<p class=\"text-center\">Zła nazwa użytkownika/hasło.</p>";
         }
         ?>
 
         <hr>
         <div class="row">
             <div class="col-sm-12">
-                <h4>Query Executed:</h4>
+                <h4>Wykonane zapytanie:</h4>
             </div>
         </div>
 
@@ -95,7 +89,7 @@ error_reporting(0)
     <hr>
     <div class="row">
         <div class="col-sm-12">
-            <h4>Kod php:</h4>
+            <h4>Kod PHP:</h4>
         </div>
     </div>
 
@@ -133,17 +127,11 @@ error_reporting(0)
     <div class="row">
         <div class="col-sm-12">
             <div class="highlight">
-            <pre>
-wpisz <strong>1' OR '1'='1</strong> jako haslo zeby sie zalogowac.
+            <pre>Wpisz <strong>1' OR '1'='1</strong> jako haslo zeby sie zalogowac.
             </pre>
             </div>
         </div>
     </div>
-
-    <br>
-
-    <?php include("footer.php"); ?>
-
 </div> <!-- /container -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
